@@ -23,7 +23,6 @@ int main(){
             }
         }
         long long int max_count = 1, res = angka[0], curr_count = 1; 
-        long long int count = 0;
         for (int i = 1; i < n; i++) { 
             if (angka[i] == angka[i - 1]) 
                 curr_count++; 
@@ -39,12 +38,7 @@ int main(){
             max_count = curr_count; 
             res = angka[n - 1]; 
         }
-        for(int i = 0; i < n; i++){
-            if(angka[i] == res){
-                count++;
-            }
-        }
-        printf("Case #%d: %lld\n", index, count);
+        printf("Case #%d: %lld\n", index, max_count);
         printf("%lld\n", res);
         index++;
     }
