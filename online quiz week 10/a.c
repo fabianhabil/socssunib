@@ -23,7 +23,7 @@ int main(){
             for(int j = 0; j < x; j++){
                 int temp = 0;
                 char tempp[55];
-                if(nunsorted[i] > nunsorted[j]){
+                if(nunsorted[i] < nunsorted[j]){
                     temp = nunsorted[i];
                     nunsorted[i] = nunsorted[j];
                     nunsorted[j] = temp;
